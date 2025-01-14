@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar() {
   return (
-    <div className='bg-black'>
+    <div className='bg-zinc-800 '>
     <nav className='flex justify-between text-white '>
       <div className='font-bold gap-4 mt-8 ml-20'>
         <h1>INK STUDIO</h1>
@@ -14,7 +14,7 @@ function Navbar() {
         <li><a href="/artists">Artists</a></li>
         <li><a href="/services">Services</a></li>
       </ul>
-      <button className='mt-6 mr-96 bg-black text-white rounded-md px-4 py-2 hover:bg-gray-800 border'>Contact</button>
+      <button className='mt-6 mr-96 bg-zinc-800  text-white rounded-md px-4 py-2 hover:bg-gray-800 border'>Contact</button>
     </nav>
     </div>
   );
