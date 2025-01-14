@@ -1,42 +1,62 @@
-import React from 'react'
+import React from "react";
 
 const Home = () => {
   return (
-  <div>
-{/* this is right texts and buttons */}
-     <div class=" text-white h-screen flex flex-col items-center justify-center mt-1 ml-1 mr-96">
-      <h1 class="text-4xl font-bold mb-4">Where Art Meets Skin</h1>
-        <p class="text-lg ">Creative tattoo artistry that tells your story through</p>
-        <p className='text-lg'>exceptional craftsmanship and unique designs.</p>
-      <div class="flex space-x-4 mt-10">
-        <button class="bg-white hover:bg-gray-100 text-black  py-2 px-4 rounded">Book Now</button>
-        <button class="bg-black-600 hover:bg-white hover:text-black text-white border py-2 px-4 rounded">View Gallery</button>
-      </div>
-    </div>
-{/* this is small card under big art canvas */}
-    <div >
-      <div className="absolute bottom-4 right-4 mb-60 mr-56 flex items-center space-x-2 bg-black/70 px-3 py-2 rounded-lg">
-        <span className="w-3 h-3 rounded-full bg-green-500"></span>
-        <span >Currently Taking Appointments</span>
-      </div>
-    </div>
-
-{/* this is footer   */}
-
-<footer >
-      <div>
-        
-        <div className="flex space-x-4 ">
-          <p>10+ Years Experience</p>
-          <p>5K+ Satisfied Clients</p>
-          <p>15+ Award Winning</p>
-          <p>100% Safe & Hygienic</p>
+    <div className="bg-yellow-100 w-full">
+      {/* isko do main divide kar diya upar ka part alag neeche ka alag */}
+      {/* Main Part */}
+      <div className="bg-black text-white flex px-20 shadow-xl ">
+        <div className="flex flex-col w-1/2 gap-10 my-24 text-start ">
+          <h1 className="text-4xl md:text-6xl font-semibold w-2/3 ">
+            Where Art Meets Skin
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            tempore magnam excepturi pariatur ullam nemo praesentium,
+            perferendis cumque necessitatibus maxime.
+          </p>
+          {/* buttons */}
+          <div className="flex gap-12 ">
+            <button className="bg-white text-black px-6 py-2 rounded-md ">
+              Book Now
+            </button>
+            <button className="px-6 py-2 rounded-md border-2 border-white hover:bg-white hover:text-black transition-all duration-100 ease-linear">
+              View Gallery{" "}
+            </button>
+          </div>
+        </div>
+        {/* right wala part */}
+        <div className="flex justify-center items-end mb-20">
+          <div>
+            <h1 className="bg-red-500 inline-block p-4">
+              Currently Taking Appointments
+            </h1>
+          </div>
         </div>
       </div>
-    </footer>
 
-  </div>
-  )
-}
 
-export default Home
+      {/* Neeche ka numbers wala part */}
+      <div className="text-white grid grid-cols-2 md:grid-cols-4 px-20 py-12 bg-red-500 ">
+          <div className="flex flex-col">
+            <h1 className="text-2xl font-bold ">10+</h1>
+            <h4 className="text-sm font-light">Years of Experience</h4>
+          </div>
+          <div className="flex flex-col">
+            <h1 className="text-2xl font-bold ">10+</h1>
+            <h4 className="text-sm font-light">Years of Experience</h4>
+          </div>
+          <div className="flex flex-col">
+            <h1 className="text-2xl font-bold ">10+</h1>
+            <h4 className="text-sm font-light">Years of Experience</h4>
+          </div>
+          <div className="flex flex-col">
+            <h1 className="text-2xl font-bold ">10+</h1>
+            <h4 className="text-sm font-light">Years of Experience</h4>
+          </div>
+        </div>
+    </div>
+  );
+};
+
+export default Home;
