@@ -2,10 +2,10 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="bg-yellow-100 w-full">
+    <div className=" w-full">
       {/* isko do main divide kar diya upar ka part alag neeche ka alag */}
       {/* Main Part */}
-      <div className="bg-black text-white flex px-20 shadow-xl ">
+      <div className="bg-primary text-myBlack flex px-20 shadow-xl ">
         <div className="flex flex-col w-1/2 gap-10 my-24 text-start ">
           <h1 className="text-4xl md:text-6xl font-semibold w-2/3 ">
             Where Art Meets Skin
